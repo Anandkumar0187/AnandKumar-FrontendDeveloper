@@ -1,38 +1,112 @@
-.App {
+#heading{
+  border-bottom : 1px solid #ccc;
+  color: #575555;
+  padding-left: 4%;
+  padding-bottom: 2%;
+}
+.banner{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  border: 2px solid #575555;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  /* border-bottom: 0; */
+  color: #575555;
+}
+.banner > div{
+  width: 50%;
+  padding-left: 5%;
+}
+#banner-img{
+  width: 70%;
+  border: 10px solid #ccc;
+  border-radius: 16px;
+  
+}
+.search-form{
+  width: 80%;
+  margin: auto;
+  border: 2px solid #575555;
+  border-bottom: 0;
+  /* border-top: 0; */
+}
+.search-form > p{
+  font-size: xx-large;
+  font-family:'Times New Roman', Times, serif;
+  margin-left: 5%;
+}
+.search-boxes{
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+}
+
+.search-boxes > input{
+  width: 30%;
+  margin-top: 2%;
+  font-size: x-large;
+  font-weight: 200;
+  color: #888;
+  border: 2px solid #888888;
+  border-radius: 12px;
+  outline: none;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#options{
+  width: 30%;
+  margin-top: 2%;
+  font-size: x-large;
+  font-weight: 200;
+  border: 2px solid #888888;
+  color: #575555;
+  border-radius: 12px;
+  outline: none;
+  text-align: center;
 }
+#search-btn{
+  width: 30%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: x-large;
+  font-weight: 200;
+  color: #888888;
+  border: 2px solid #888888;
+  border-radius: 12px;
+  outline: none;
+  text-align: center;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.data-grid{
+  width: 80%;
+  margin: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  border: 2px solid #575555;
+  padding-bottom: 2%;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-top: 0;
+}
+.data-grid > div{
+  border: 1px solid #888888;
+  color: #575555;
+  margin-left: 5%;
+  margin-top: 2%;
+  padding: 3%;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 22%;
+  height: 200px;
+}
+.paging{
+  width: 20%;
+  margin: auto;
+  display: flex;
+  cursor: pointer;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.paging > h3{
+  padding: 2%;
+  border: 1px solid black;
 }
